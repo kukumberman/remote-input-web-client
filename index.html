@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="./index.js"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <button id="btn-reconnect">Reconnect</button>
+      <div>
+        <input
+          type="checkbox"
+          id="checkbox-renderHand"
+        />
+        <label for="checkbox-renderHand">renderHand</label>
+      </div>
+    </div>
+    <div style="position: relative">
+      <video
+        autoplay
+        loop
+        muted
+        controls
+        playsinline
+      ></video>
+      <canvas style="position: absolute; left: 0px; top: 0px; pointer-events: none"></canvas>
+    </div>
+  </body>
+</html>
